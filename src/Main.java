@@ -120,9 +120,37 @@ public class Main {
         );
 
 
+        // T6: Circle + AsciiRenderer
+        Circle circleAscii =
+                new Circle("circle-ascii", 2, new AsciiRenderer());
+
+        String resultT6 = circleAscii.execute();
+
+        check(
+                "T6",
+                "Circle + AsciiRenderer",
+                resultT6,
+                "ASCII circle radius=2"
+        );
+
+
+        // T7: Square + AsciiRenderer
+        Square squareAscii =
+                new Square("square-ascii", 3, new AsciiRenderer());
+
+        String resultT7 = squareAscii.execute();
+
+        check(
+                "T7",
+                "Square + AsciiRenderer",
+                resultT7,
+                "ASCII square side=3"
+        );
+
+
         System.out.println();
         System.out.println(
-                "BASE SUMMARY: " + passed + "/" + total + " PASS"
+                "SUMMARY: " + passed + "/" + total + " PASS"
         );
     }
 
